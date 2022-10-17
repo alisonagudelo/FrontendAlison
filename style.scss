@@ -1,0 +1,277 @@
+$bg-1: #36383C;
+$bg-2: #F3F5F7;
+
+$bg-3: #f9fafa;
+
+$bg-index:#202327;
+
+$accent-1:#E8B769;
+$accent-2:#B23333;
+
+$accent-1-75:#e8b769ab;
+
+$accent-1-var:hsl(37, 73%, 75%);
+$accent-2-var:hsl(0, 55%, 65%);
+
+$fg-1:#B1B7C4;
+
+$font-1:#C9C9C9;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+select:focus,
+.uneditable-input:focus {   
+  border: 1px solid $accent-1 !important;
+  box-shadow: none !important;
+}
+.material-symbols-outlined{
+    vertical-align: sub;
+}
+
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+#index{
+    color: white;
+    background: rgb(32,35,39);
+    background: linear-gradient(128deg, rgba(32,35,39,1) 54%, rgba(59,64,71,1) 100%);
+    h1{
+        font-size: 48px;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 20px;
+        font-weight: 400;
+        color: $font-1;
+    }
+
+
+
+    .home-container{
+        background-image: url("./assets/Gradient_Geometric_Lines_Pattern\ [Converted].svg");
+        height: 100vh;
+        .col{
+            display: flex;
+            flex-flow: column;
+            align-self: center;
+        }
+    }
+
+    .btn-primary{
+        color: $bg-index;
+        font-weight: 600;
+    }
+}
+
+.navbar{
+    background-color: $bg-1 !important;
+    padding-left: 70px;
+    padding-right: 70px;
+    a{
+        color: $fg-1;
+        font-weight: 600;
+        &.active{
+            color: $accent-1 !important;
+            font-weight: 700;
+            &:hover{
+                color: $accent-1-var !important;
+            }
+        }
+
+        &:hover{
+            color: white !important;
+        }   
+    }
+}
+
+body{
+    background-color: $bg-2;
+}
+
+.buttons-container{
+    display: flex;
+    flex-flow: row;
+    gap: 12px;
+    margin-bottom: 24px;
+
+    padding: 0;
+    .btn-secondary{
+        background-color: white;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        color: $bg-1;
+        border: none;
+        border: 1px solid white;
+        &.active{
+            border: 1px solid $accent-1;
+            background-color: $bg-3;
+        }
+    }
+}
+
+.cards-container{
+    display: flex;
+    flex-flow: row;
+    gap: 24px;
+    margin-bottom: 24px;
+    padding: 0;
+   
+    .report-card{
+        min-width: 250px;
+        background-color: white;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        color: $bg-1;
+        border: none;
+        padding: 36px 65px;
+        border-radius: 4px;
+        position: relative;
+        text-align: center;
+        .value{
+            font-size: 57px;
+            font-weight: 600px;
+            color: $bg-index;
+        }
+        .tag{
+            font-size: 24px;
+            color: $bg-1;
+        }
+
+        .completed{
+            color: #88ED52;
+        }
+        .cancelled{
+            color: #ED5353;
+        }
+        .material-symbols-outlined{
+        position: absolute; 
+        top: 12px;
+        left: 12px;
+        font-size: 40px;
+        }
+    }
+}
+
+.main-container{
+    padding-top: 24px;
+    h1{
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+}
+
+
+.sub-container{
+    margin-bottom: 24px;
+    padding: 24px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.form-container{
+    display: flex;
+    flex-flow: row;
+    gap: 16px;
+    .input-container{
+        .input-group{
+            width: 100% !important;
+            input{
+                width: 100% !important;
+            }
+        }
+    
+
+        .form-container.user-age{
+            max-width: min-content;
+        }
+
+        &.grow{
+            flex-grow: 1;
+        }
+    
+    }
+    .button-container{
+        align-self: flex-end;
+        .btn{
+            margin-bottom: 1rem !important;
+        }
+    }
+
+}
+
+.btn.btn-primary{
+    background-color: $accent-1;
+    border: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    &:active{
+        background-color: $accent-1-var;
+    }
+}
+
+table{
+   
+    tr{
+        th{
+            vertical-align: middle;
+        }
+        td{
+            vertical-align: middle;
+        }
+        th:last-child{
+            text-align: right !important;
+        }
+        td:last-child{
+            text-align: right !important;
+            
+        }
+
+        .table-btn{
+            background-color: white;
+            border: none;
+            &.btn-delete{
+                color: $accent-2;
+            }
+            &.btn-update{
+                color: $accent-1;
+                margin-right: 12px !important;
+            }
+        }
+
+        &:hover{
+            .table-btn{
+               
+                border: none;
+                &.btn-delete{
+                    color: white;
+                    background-color: $accent-2;
+                }
+                &.btn-update{
+                   color: white;
+                   background-color:$accent-1;
+                }
+            }
+        }
+    }
+}

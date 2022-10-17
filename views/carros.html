@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="../js/carros.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../style.css" />
+
+    <title>Rent-a-Car - Carros</title>
+  </head>
+  <body>
+    <!-- Navbar  -->
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="gamas.html"
+                >Gamas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="carros.html">Carros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clientes.html">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mensajes.html">Mensajes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservacion.html">Reservaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reportes.html">Reportes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container main-container">
+      <h1>Carros</h1>
+
+      <!-- Form -->
+
+      <div class="container form-container sub-container">
+     
+        <div class="input-container">
+          <label for="modelo" class="form-label">Modelo</label>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control gama"
+              id="modelo"
+              placeholder="Modelo"
+            />
+          </div>
+        </div>
+
+        <div class="input-container">
+            <label for="fabricante" class="form-label">Fabricante</label>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control gama"
+                id="fabricante"
+                aria-describedby="basic-addon3"
+                placeholder="Fabricante"
+              />
+            </div>
+          </div>
+        
+          <div class="input-container">
+            <label for="year" class="form-label">Año</label>
+            <div class="input-group mb-3">
+              <input
+                type="number"
+                min="1900"
+                class="form-control gama"
+                id="year"
+                aria-describedby="basic-addon3"
+                placeholder="Año"
+              />
+            </div>
+          </div>
+
+          <div class="input-container">
+            <label for="descripcion" class="form-label">Descripcion</label>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control gama"
+                id="descripcion"
+                placeholder="Descripcion"
+              />
+            </div>
+          </div>
+
+          <div class="input-container grow">
+            <label for="select-categoria" class="form-label">Gama</label>
+            <select id="select-categoria" class="form-select" aria-label="Default select example">
+                <option selected>Alta</option>
+                <option value="1">Alta</option>
+              </select>
+          </div>
+
+        <div class="button-container">
+          <button onclick="postCar()" id="btn-crear" type="button" class="btn btn-primary">Crear Carro</button>
+        </div>
+      </div>
+
+      <!-- Table -->
+
+      <div class="container sub-container">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Modelo</th>
+              <th scope="col">Fabricante</th>
+              <th scope="col">Año</th>
+              <th scope="col">Descripcion</th>
+               <th scope="col">Categoria</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      window.onload = populateSelect();
+      window.onload = getAndUpdateTable();
+    </script>
+
+  </body>
+</html>

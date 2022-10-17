@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+select:focus,
+.uneditable-input:focus {
+  border: 1px solid #E8B769 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.material-symbols-outlined {
+  vertical-align: sub;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#index {
+  color: white;
+  background: #202327;
+  background: linear-gradient(128deg, #202327 54%, #3b4047 100%);
+}
+
+#index h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#index h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #C9C9C9;
+}
+
+#index .home-container {
+  background-image: url("./assets/Gradient_Geometric_Lines_Pattern [Converted].svg");
+  height: 100vh;
+}
+
+#index .home-container .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#index .btn-primary {
+  color: #202327;
+  font-weight: 600;
+}
+
+.navbar {
+  background-color: #36383C !important;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.navbar a {
+  color: #B1B7C4;
+  font-weight: 600;
+}
+
+.navbar a.active {
+  color: #E8B769 !important;
+  font-weight: 700;
+}
+
+.navbar a.active:hover {
+  color: #eeca91 !important;
+}
+
+.navbar a:hover {
+  color: white !important;
+}
+
+body {
+  background-color: #F3F5F7;
+}
+
+.buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.buttons-container .btn-secondary {
+  background-color: white;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #36383C;
+  border: none;
+  border: 1px solid white;
+}
+
+.buttons-container .btn-secondary.active {
+  border: 1px solid #E8B769;
+  background-color: #f9fafa;
+}
+
+.cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  gap: 24px;
+  margin-bottom: 24px;
+  padding: 0;
+}
+
+.cards-container .report-card {
+  min-width: 250px;
+  background-color: white;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #36383C;
+  border: none;
+  padding: 36px 65px;
+  border-radius: 4px;
+  position: relative;
+  text-align: center;
+}
+
+.cards-container .report-card .value {
+  font-size: 57px;
+  font-weight: 600px;
+  color: #202327;
+}
+
+.cards-container .report-card .tag {
+  font-size: 24px;
+  color: #36383C;
+}
+
+.cards-container .report-card .completed {
+  color: #88ED52;
+}
+
+.cards-container .report-card .cancelled {
+  color: #ED5353;
+}
+
+.cards-container .report-card .material-symbols-outlined {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 40px;
+}
+
+.main-container {
+  padding-top: 24px;
+}
+
+.main-container h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.sub-container {
+  margin-bottom: 24px;
+  padding: 24px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  gap: 16px;
+}
+
+.form-container .input-container .input-group {
+  width: 100% !important;
+}
+
+.form-container .input-container .input-group input {
+  width: 100% !important;
+}
+
+.form-container .input-container .form-container.user-age {
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+}
+
+.form-container .input-container.grow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.form-container .button-container {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.form-container .button-container .btn {
+  margin-bottom: 1rem !important;
+}
+
+.btn.btn-primary {
+  background-color: #E8B769;
+  border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.btn.btn-primary:active {
+  background-color: #eeca91;
+}
+
+table tr th {
+  vertical-align: middle;
+}
+
+table tr td {
+  vertical-align: middle;
+}
+
+table tr th:last-child {
+  text-align: right !important;
+}
+
+table tr td:last-child {
+  text-align: right !important;
+}
+
+table tr .table-btn {
+  background-color: white;
+  border: none;
+}
+
+table tr .table-btn.btn-delete {
+  color: #B23333;
+}
+
+table tr .table-btn.btn-update {
+  color: #E8B769;
+  margin-right: 12px !important;
+}
+
+table tr:hover .table-btn {
+  border: none;
+}
+
+table tr:hover .table-btn.btn-delete {
+  color: white;
+  background-color: #B23333;
+}
+
+table tr:hover .table-btn.btn-update {
+  color: white;
+  background-color: #E8B769;
+}
+/*# sourceMappingURL=style.css.map */
